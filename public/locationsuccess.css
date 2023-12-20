@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://img.freepik.com/free-vector/address-concept-illustration_114360-4747.jpg?w=740&t=st=1696249067~exp=1696249667~hmac=b3f4c1b1de4ac92e10cf9fa4d72016ccbb48bdb2aea390ee47374c4ccae02306');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom left; /* Set background image to bottom left */
+    background-origin: content-box; /* Position the image from the content box */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    text-align: center;  
+    background-color: #f2f2f2;
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    color: #4CAF50;
+}
+
+#button {
+    background-color: #2563eb;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#button:hover {
+    background-color: #2534eb;
+}

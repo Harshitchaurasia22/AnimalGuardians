@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body>
+  <div class="bg-white">
+    <header class="absolute inset-x-0 top-0 z-50">
+        <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
+          <div class="flex lg:flex-1">
+            <a href="/" class="-m-1.5 p-1.5">
+              <span class="sr-only">Your Company</span>
+              <img class="h-8 w-auto" src="images/icon.jpeg" alt="">
+            </a>
+          </div>
+          <div class="flex lg:hidden">
+            <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+              <span class="sr-only">Open main menu</span>
+              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              </svg>
+            </button>
+          </div>
+          <div class="hidden lg:flex lg:gap-x-12">
+            <form action="/location" method="post">
+              <input type="submit" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50" value="Location">
+            </form>
+            <form action="/blog" method="post">
+              <input type="submit" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50" value="Blogs">
+            </form>
+            <form action="/shop" method="post">
+              <input type="submit" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50" value="Shop">
+            </form>
+            <form action="/stayinformed" method="post">
+              <input type="submit" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50" value="Insider Club">
+            </form>
+          </div>
+          <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+            <form action="/aboutus" method="post">
+              <input type="submit" class="text-base font-semibold leading-6 text-gray-900" value="About Us">
+            </form>
+          </div>
+        </nav>
+        <!-- Mobile menu, show/hide based on menu open state. -->
+        <div class="lg:hidden" role="dialog" aria-modal="true">
+          <!-- Background backdrop, show/hide based on slide-over state. -->
+          <div class="fixed inset-0 z-50"></div>
+          <div class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+            <div class="flex items-center justify-between">
+              <a href="#" class="-m-1.5 p-1.5">
+                <span class="sr-only">Your Company</span>
+                <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="">
+              </a>
+              <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
+                <span class="sr-only">Close menu</span>
+                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+            <div class="mt-6 flow-root">
+              <div class="-my-6 divide-y divide-gray-500/10">
+                <div class="space-y-2 py-6">
+                  <form action="/location" method="post">
+                    <input type="submit" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50" value="Location">
+                  </form>
+                  <form action="/blog" method="post">
+                    <input type="submit" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50" value="Blogs">
+                  </form>
+                  <form action="/shop" method="post">
+                    <input type="submit" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50" value="Shop">
+                  </form>
+                  <form action="/stayinformed" method="post">
+                      <input type="submit" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50" value="Insider Club">
+                  </form>
+                </div>
+                <div class="py-6">
+                  <form action="/aboutus" method="post">
+                    <input type="submit" class="text-base font-semibold leading-6 text-gray-900" value="About Us">
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+    <div class="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
+        <div class="absolute inset-0 -z-10 overflow-hidden">
+          <svg class="absolute left-[max(50%,25rem)] top-0 h-[64rem] w-[128rem] -translate-x-1/2 stroke-gray-200 [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]" aria-hidden="true">
+            <defs>
+              <pattern id="e813992c-7d03-4cc4-a2bd-151760b470a0" width="200" height="200" x="50%" y="-1" patternUnits="userSpaceOnUse">
+                <path d="M100 200V.5M.5 .5H200" fill="none" />
+              </pattern>
+            </defs>
+            <svg x="50%" y="-1" class="overflow-visible fill-gray-50">
+              <path d="M-100.5 0h201v201h-201Z M699.5 0h201v201h-201Z M499.5 400h201v201h-201Z M-300.5 600h201v201h-201Z" stroke-width="0" />
+            </svg>
+            <rect width="100%" height="100%" stroke-width="0" fill="url(#e813992c-7d03-4cc4-a2bd-151760b470a0)" />
+          </svg>
+        </div>
+        <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10">
+          <div class="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
+            <div class="lg:pr-4">
+              <div class="lg:max-w-lg">
+             
+                <h1 class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">The Heartwarming Journey of Animal Rescue: A Tale of Compassion and Hope</h1>
+               
+            </div>
+          </div>
+          <div class="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
+            <img class="w-[48rem] max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]" src="https://tailwindui.com/img/component-images/dark-project-app-screenshot.png" alt="">
+          </div>
+          <div class="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
+            <div class="lg:pr-4">
+              <div class="max-w-xl text-base leading-7 text-gray-700 lg:max-w-lg">
+                <p>In a world filled with chaos and challenges, there is a beacon of hope that shines brightly – the realm of animal rescue. This noble endeavor is fueled by compassion, dedication, and a profound love for all living beings. Join us as we delve into the heartwarming journey of animal rescue, where everyday heroes work tirelessly to make a difference in the lives of our furry and feathered friends.
+
+                  The Call of Compassion
+                  
+                  Animal rescue begins with the call of compassion – a deep-seated desire to alleviate the suffering of innocent creatures who cannot speak for themselves. Whether abandoned, abused, or facing life-threatening situations, animals in distress rely on the kindness of humans to provide them with a second chance at life. It is this unwavering compassion that motivates individuals to step forward and become advocates for the voiceless.
+                  
+                  Rescue Stories that Inspire
+                  
+                  Behind every successful animal rescue, there is a story that tugs at the heartstrings. Tales of resilience, recovery, and transformation showcase the incredible impact of compassionate intervention. From the neglected dog finding a loving forever home to the injured bird nursed back to health, each story is a testament to the power of empathy and the potential for positive change.
+                  
+                  The Dedicated Heroes
+                  
+                  Animal rescue organizations are comprised of unsung heroes who dedicate their lives to the welfare of animals. Veterinarians, animal welfare officers, volunteers, and foster families form a compassionate network that works tirelessly to rescue, rehabilitate, and rehome animals in need. These individuals exemplify the true spirit of altruism, often going above and beyond to ensure the well-being of the creatures under their care.
+                  
+                  Challenges on the Rescue Journey
+                  
+                  While the journey of animal rescue is filled with moments of joy and triumph, it is not without its challenges. Limited resources, overpopulation, and the need for public awareness are obstacles that rescuers face daily. Overcoming these hurdles requires collaboration, education, and a united front against the issues that plague the animal kingdom.
+                  
+                  The Importance of Adoption
+                  
+                  Adoption is a cornerstone of animal rescue, offering a lifeline to countless animals seeking loving homes. Through adoption, families open their hearts and homes to a furry companion, providing them with the love and security they deserve. Adopting from shelters not only saves lives but also helps break the cycle of overpopulation and reduces the number of animals in need of rescue.
+                  
+                  Educating for Change
+                  
+                  One of the key components of effective animal rescue is education. By raising awareness about responsible pet ownership, the importance of spaying and neutering, and the humane treatment of animals, rescuers aim to create a society where every creature is treated with dignity and respect. Education is a powerful tool for change, paving the way for a future where animal rescue is no longer a necessity.
+                  
+                  Conclusion
+                  
+                  The journey of animal rescue is a testament to the beauty of compassion and the profound impact that individuals can have on the lives of animals. Through dedication, education, and the tireless efforts of rescue organizations, we can create a world where every animal is cherished and given the chance to live a life free from suffering. As we celebrate the triumphs of the animal rescue community, let us be inspired to join the cause, ensuring a brighter and more compassionate future for all creatures, great and small.</p>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</body>
+</html>
